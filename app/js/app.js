@@ -18,6 +18,17 @@
          item['location']['prefecture'] +
          item['location']['city'] + "の今宵の天気は" + item['description']['text'] + "ってかんじ！"
        );       
+       console.log(item);
+       for(var i = 0; i < item['forecasts'].length; i++) {
+         var min = item['forecasts'][i]['temperature']['min'];
+         var max = item['forecasts'][i]['temperature']['max'];
+         /* min, max maybe null */
+         if ((min == null) || (max == null)) {
+           continue;
+         }
+         console.log('最高気温' + max['celsius']);
+         console.log('最低気温' + min['celsius']);
+       }
     });	 
   });
 })();
