@@ -35,6 +35,7 @@
               <span id="result"></span>
             </div>
           <form>
+          <?php phpinfo(); ?>
         </div><!--data-role="content" -->
         <div data-role="footer" data-theme="b">
           <h2>Wether TAIKI</h2>
