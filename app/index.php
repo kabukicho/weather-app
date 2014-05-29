@@ -35,12 +35,36 @@
               <span id="result"></span>
             </div>
           <form>
-          <?php phpinfo(); ?>
+          <?php echo 1 + 2; ?>
+          <?php /* phpinfo(); */ ?>
+          <div>
+            <a href="#test-db" data-role="button" data-inline="true">データベースのテスト</a>
+          </div>
         </div><!--data-role="content" -->
         <div data-role="footer" data-theme="b">
           <h2>Wether TAIKI</h2>
         </div>    
       </div><!--data-role="page" id="index" -->
+
+
+
+      <div data-role="page" id="test-db">
+        <div data-role="header" data-theme="b">
+          <h1>My WebApp</h1>
+        </div>  
+        <div data-role="content">
+          <div class="test-db-result">
+            <?php include('./test_db.php'); ?>
+          </div>
+          <div>
+            <a href="#" data-rel="back" data-role="button" data-inline="true">Back</a>
+          </div>
+        </div><!--data-role="content" -->
+        <div data-role="footer" data-theme="b">
+          <h2>Wether TAIKI</h2>
+        </div>    
+      </div><!--data-role="page" id="index" -->
+
     </body>
 </html>
 
